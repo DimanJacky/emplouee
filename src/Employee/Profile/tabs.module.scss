@@ -1,0 +1,22 @@
+.tabs {
+    border-bottom: 1px solid $gray-3;
+
+    A {
+        line-height: 2.85;
+        color: $violet-6;
+        text-decoration: none;
+        margin-right: 1rem;
+        margin-bottom: -1px;
+        display: inline-block;
+
+        &:hover,
+        &:active,
+        &.active {
+            border-bottom: 1px solid $violet-6;
+        }
+
+        &.active {
+            font-weight: bold;
+        }
+    }
+}

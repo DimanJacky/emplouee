@@ -1,0 +1,30 @@
+.results {
+    H4 {
+        color: $gray-7;
+    }
+
+    .headerTop {
+        font-size: 1rem;
+    }
+
+    .table {
+        margin-top: 2rem;
+
+        .header {
+            & > DIV {
+                white-space: nowrap;
+            }
+        }
+
+        .background {
+            background: transparent;
+        }
+
+        .actions {
+            A {
+                color: $violet-5;
+                margin: 0 0.2em;
+            }
+        }
+    }
+}

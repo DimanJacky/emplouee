@@ -1,0 +1,89 @@
+.sticky {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.header {
+    background-color: $violet-6;
+    padding: 1.375em 0;
+    color: #FFFFFF;
+    font-size: $font-size-large;
+
+    .wrapper {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+
+        .navigation {
+            flex-grow: 1;
+
+            A {
+                color: $gray-4;
+                text-decoration: none;
+                padding: 0.5rem;
+                margin: 0 2rem;
+
+                &:hover,
+                &:active,
+                &.active {
+                    color: #FFFFFF;
+                }
+            }
+        }
+
+        .toolbar {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            flex-basis: 20%;
+
+            svg {
+                vertical-align: middle;
+            }
+
+            A {
+                color: #FFFFFF;
+            }
+
+            .search {
+                margin-right: 2rem;
+            }
+
+            .bell {
+                margin-right: 1rem;
+            }
+
+            .login {
+                text-decoration: none;
+                margin-right: 2rem;
+                white-space: nowrap;
+            }
+        }
+    }
+}
+
+.submenu {
+    background-color: #FFF;
+    border-bottom: 1px solid $gray-3;
+    font-size: $font-size-large;
+
+    A {
+        line-height: 3.35;
+        color: $gray-8;
+        text-decoration: none;
+        margin-right: 1.5rem;
+        margin-bottom: -1px;
+        display: inline-block;
+        border-bottom: 1px solid transparent;
+
+        &:hover,
+        &:active,
+        &.active {
+            color: $yellow-7;
+            border-bottom: 1px solid $yellow-7;
+        }
+    }
+}
